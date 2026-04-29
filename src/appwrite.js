@@ -1,7 +1,7 @@
 import {Client, Databases, ID, Query } from 'appwrite'
 
 const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
-const DATABASE_ID = import.meta.env.vite_APPWRITE_DATABASE_ID;
+const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
 let client;
@@ -10,7 +10,7 @@ let database;
 try {
     if(PROJECT_ID) {
         client = new Client()
-        .setEndpoint('https://fra.cloud.appwrite.io/v1')
+        .setEndpoint('https://nyc.cloud.appwrite.io/v1')
         .setProject(PROJECT_ID);
 
         database = new Databases(client);
@@ -26,7 +26,7 @@ try {
     console.error("Appwrite initialization failed:", error);
 }
 
-export const updatedSearchCount = async (searchTerm, movie ) => {
+export const updateSearchCount = async (searchTerm, movie ) => {
     if (!database) {
         console.log("Appwrite databbase not initialized.");
         return;
