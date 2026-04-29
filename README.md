@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 CineScope - movie app
+# 🎬 CineScope - movie Discovery app
 
 ### Discover movies you'll love — instantly.
 
