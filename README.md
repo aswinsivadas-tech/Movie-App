@@ -57,7 +57,7 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/shasbinas/Movie-App.git
+git clone https://github.com/aswinsivadas-tech/Movie-App.git
 cd movie-app
 
 # 2. Install dependencies
